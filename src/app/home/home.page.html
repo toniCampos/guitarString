@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      guitarString
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -16,14 +16,10 @@
   <div id="container">
     <strong>¿Qué quieres ver?</strong>
     <section>
-        <ion-button expand="block">Escalas</ion-button>
+        <ion-button expand="block" (click)="Escala()">Escalas</ion-button>
     </section>
     <section>
-        <ion-button expand="block">Acordes</ion-button>
+        <ion-button expand="block" (click)="Acorde()">Acordes</ion-button>
     </section>
-     
-    
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
-  
 </ion-content>
