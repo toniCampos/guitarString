@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-select-escala',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelectEscalaPage implements OnInit {
 
-  constructor() { }
+  constructor(public navCtrl: NavController) { }
 
   ngOnInit() {
+  }
+
+  Fretboard() {
+    this.navCtrl.navigateForward("/fretboard");
   }
 
 }
