@@ -17,5 +17,7 @@ export class SelectEscalaPage implements OnInit {
   Fretboard() {
     this.navCtrl.navigateForward("/fretboard");
   }
-
+  Home(){
+    this.navCtrl.navigateForward("/home");
+  }
 }
