@@ -8,12 +8,15 @@ import { SelectEscalaPageRoutingModule } from './select-escala-routing.module';
 
 import { SelectEscalaPage } from './select-escala.page';
 
+import {MatExpansionModule} from '@angular/material/expansion';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SelectEscalaPageRoutingModule
+    SelectEscalaPageRoutingModule,
+    MatExpansionModule
   ],
   declarations: [SelectEscalaPage]
 })

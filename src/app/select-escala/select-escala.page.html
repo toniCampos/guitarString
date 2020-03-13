@@ -6,7 +6,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content padding [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">guitarString</ion-title>
@@ -30,5 +30,28 @@
     <section>
       <ion-button expand="block">Cromática</ion-button>
     </section>
+
+    <mat-expansion-panel class="matExpansion">
+      <mat-expansion-panel-header>
+        This is the expansion title
+      </mat-expansion-panel-header>
+    
+    <div class="fretboardContainer">
+
+      <pre>
+<p>
+  —E—||——<button class="rootNoteButton">F </button>——|——F#——|——G ——|——G#——|——A ——|——A#——|——B ——|——C ——|——C#——|——D ——|——D#——|——E ——| &nbsp;
+  —B—||——<button class="noteButton">A</button>——|——C#——|——D ——|——D#——|——E ——|——F ——|——F#——|——G ——|——G#——|——A ——|——A#——|——B ——| &nbsp;
+  —G—||——<button class="noteButton">G#</button>——|——A ——|——A#——|——B ——|——C ——|——C#——|——D ——|——D#——|——E ——|——F ——|——F#——|——G ——| &nbsp;
+  —D—||——<button class="noteButton">D#</button>——|——E ——|——F ——|——F#——|——G ——|——G#——|——A ——|——A#——|——B ——|——C ——|——C#——|——D ——| &nbsp;
+  —A—||——<button class="noteButton">A#</button>——|——B ——|——C ——|——C#——|——D ——|——D#——|——E ——|——F ——|——F#——|——G ——|——G#——|——A ——| &nbsp;
+  —E—||——<button class="noteButton">F</button>——|——F#——|——G ——|——G#——|——A ——|——A#——|——B ——|——C ——|——C#——|——D ——|——D#——|——E ——| &nbsp;
+</p>
+      </pre>
+
+    </div>
+    
+    
+    </mat-expansion-panel>
   </div>
 </ion-content>
