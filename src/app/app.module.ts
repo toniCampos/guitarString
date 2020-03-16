@@ -11,6 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { FretboardComponent } from './fretboard/fretboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { NativeAudio } from '@ionic-native/native-audio/ngx';
+
 @NgModule({
   declarations: [AppComponent, FretboardComponent],
   entryComponents: [FretboardComponent],
@@ -18,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   providers: [
     StatusBar,
     SplashScreen,
+    NativeAudio,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
