@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../services/httpService.service';
 
 @Component({
   selector: 'app-select-nota',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelectNotaPage implements OnInit {
 
-  constructor() { }
+  constructor(private httpSrv: HttpService) { }
 
   ngOnInit() {
+    this.httpSrv.getChords()
+    .subscribe(res => {
+      console.log(res);
+    });
   }
 
 }
