@@ -1,27 +1,28 @@
-<ion-header >
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      guitarString
-    </ion-title>
+    <ion-buttons slot="secondary">
+      <ion-button>
+        <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Acordes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-buttons slot="secondary">
+      <ion-button>
+        <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Acordes</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-      <ion-toolbar>
-        <ion-buttons slot="secondary">
-          <ion-button>
-            <ion-back-button defaultHref="home"></ion-back-button>
-          </ion-button>
-        </ion-buttons>
-        <ion-title>Acordes</ion-title>
-      </ion-toolbar>
-    </ion-header>
-
   <div id="container">
-    <ion-text color="dark">
-      <h5>Selecciona la nota raíz</h5>
-    </ion-text>
+    <strong>Selecciona la nota raíz</strong>
     <section>
         <ion-button expand="block">Do</ion-button>
     </section>
