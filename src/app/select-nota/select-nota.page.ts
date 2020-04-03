@@ -10,10 +10,13 @@ export class SelectNotaPage implements OnInit {
 
   constructor(private httpSrv: HttpService) { }
 
+  acordes = {};
+
   ngOnInit() {
     this.httpSrv.getChords()
     .subscribe(res => {
-      console.log(res);
+      this.acordes = res;
+      console.log(this.acordes);
     });
   }
 
