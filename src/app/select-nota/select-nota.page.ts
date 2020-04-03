@@ -12,7 +12,7 @@ export class SelectNotaPage implements OnInit {
 
   constructor(private httpSrv: HttpService) { }
 
-  acordes = {};
+  acordes: any;
 
   ngOnInit() {
     this.httpSrv.getChords()
@@ -28,7 +28,7 @@ export class SelectNotaPage implements OnInit {
       const B = this.acordes.B;
       const Bm = this.acordes.Bm;
       const B7 = this.acordes.B7;
-      
+
       const C = this.acordes.C;
       const Cm = this.acordes.Cm;
       const C7 = this.acordes.C7;
