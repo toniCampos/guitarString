@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController, Platform } from '@ionic/angular';
 import { NativeAudio } from '@ionic-native/native-audio/ngx';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-type-acorde',
@@ -10,7 +11,7 @@ import { NativeAudio } from '@ionic-native/native-audio/ngx';
 
 export class TypeAcordePage {
   
-  constructor(public navCtrl: NavController, public platform: Platform, private nativeAudio: NativeAudio) {
+  constructor(public navCtrl: NavController, public platform: Platform, private nativeAudio: NativeAudio, public activeRouter: ActivatedRoute) {
     this.nativeAudio.preloadSimple('A_1', 'assets/audio/A_1.mp3').then(
       (success) => {console.log('successA#1'); }, (error) => {console.log('errorA#1'); }
     );
@@ -195,6 +196,8 @@ export class TypeAcordePage {
       (success) => {console.log('successG5'); }, (error) => {console.log('errorG5'); }
     );
   }
+
+  
 
   A() {
     this.nativeAudio.play('A1').then(
@@ -587,5 +590,13 @@ export class TypeAcordePage {
     this.nativeAudio.play('F3').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
+  }
+
+
+  
+
+  ngOnInit() {
+    let notaSeleccionada = this.activeRouter.snapshot.paramMap.get('notaRaiz');
+    console.log(notaSeleccionada);
   }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from '../services/httpService.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-select-nota',
@@ -10,7 +11,12 @@ import { HttpService } from '../services/httpService.service';
 
 export class SelectNotaPage implements OnInit {
 
-  constructor(private httpSrv: HttpService) { }
+  clickNota(nombreNota) {
+    console.log("Presionó: " + nombreNota)
+    this.router.navigate(['type-acorde', nombreNota])
+  }
+
+  constructor(private httpSrv: HttpService, public router: Router) { }
 
   acordes: any;
 
@@ -50,5 +56,4 @@ export class SelectNotaPage implements OnInit {
       const G7 = this.acordes.G7;
     });
   }
-
 }

@@ -18,7 +18,7 @@ const routes: Routes = [
     loadChildren: () => import('./select-nota/select-nota.module').then( m => m.SelectNotaPageModule)
   },
   {
-    path: 'type-acorde',
+    path: 'type-acorde/:notaRaiz',
     loadChildren: () => import('./type-acorde/type-acorde.module').then( m => m.TypeAcordePageModule)
   },
   { path: 'fretboard', component: FretboardComponent}
