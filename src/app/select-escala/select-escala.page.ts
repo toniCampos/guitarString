@@ -18,9 +18,9 @@ export class SelectEscalaPage {
   }
 
   play(){
-    this.nativeAudio.play('uniqueId1').then((success)=>{
+    this.nativeAudio.play('uniqueId1').then((success) => {
       console.log("success playing");
-    },(error)=>{
+    },(error) => {
       console.log("errorrrrr");
     });
   }
