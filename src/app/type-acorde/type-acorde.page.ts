@@ -196,4 +196,396 @@ export class TypeAcordePage {
     );
   }
 
+  A() {
+    this.nativeAudio.play('A1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('E2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('A2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('C_2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('E5').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+  }
+
+  Am() {
+    this.nativeAudio.play('A1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('E2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('A2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('C2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('E5').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+  }
+
+  A7() {
+    this.nativeAudio.play('A1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('E2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('G2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('C_2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('E5').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+  }
+
+  B() {
+    this.nativeAudio.play('B1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('F_2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('B2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('D_2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('F3').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+  }
+  
+  Bm() {
+    this.nativeAudio.play('B1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('F_2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('B2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('D2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('F_3').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+  }
+
+  B7() {
+    this.nativeAudio.play('B1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('F_2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('B2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('A2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('F_3').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+  }
+
+  C() {
+    this.nativeAudio.play('C1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('E2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('G2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('C4').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('E5').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+  }
+
+  Cm() {
+    this.nativeAudio.play('C1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('G2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('C4').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('E5').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('G3').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+  }
+
+  C7() {
+    this.nativeAudio.play('C1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('E2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('A_2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('C4').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+  }
+
+  D() {
+    this.nativeAudio.play('D1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('A2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('D2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('F_3').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+  }
+
+  Dm() {
+    this.nativeAudio.play('D1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('A2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('D2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('F3').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+  }
+
+  D7() {
+    this.nativeAudio.play('D1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('A2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('C2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('F_3').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+  }
+
+  E() {
+    this.nativeAudio.play('E1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('B1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('E2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('G_2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('B2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('E5').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+  }
+
+  Em() {
+    this.nativeAudio.play('E1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('B1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('E2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('G2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('B2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('E5').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+  }
+
+  E7() {
+    this.nativeAudio.play('E1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('B1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('D1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('G_2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('B2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('E5').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+  }
+
+  F() {
+    this.nativeAudio.play('F1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('C1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('F2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('A2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('C4').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('F3').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+  }
+
+  Fm() {
+    this.nativeAudio.play('F1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('C1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('F2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('B2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('C4').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('F3').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+  }
+
+  F7() {
+    this.nativeAudio.play('F1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('C1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('D_1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('A2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('C4').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('F3').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+  }
+
+  G() {
+    this.nativeAudio.play('G1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('B1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('D1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('G2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('B2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('G3').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+  }
+
+  Gm() {
+    this.nativeAudio.play('G1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('A_1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('D1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('G2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('D2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('G3').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+  }
+
+  G7() {
+    this.nativeAudio.play('G1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('B1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('D1').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('G2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('B2').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+    this.nativeAudio.play('F3').then(
+      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
+    );
+  }
 }
