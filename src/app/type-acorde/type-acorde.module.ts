@@ -8,12 +8,16 @@ import { TypeAcordePageRoutingModule } from './type-acorde-routing.module';
 
 import { TypeAcordePage } from './type-acorde.page';
 
+import {MatButtonModule} from '@angular/material/button';
+import { MatExpansionModule } from '@angular/material/expansion';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TypeAcordePageRoutingModule
+    TypeAcordePageRoutingModule,
+    MatButtonModule,
+    MatExpansionModule
   ],
   declarations: [TypeAcordePage]
 })

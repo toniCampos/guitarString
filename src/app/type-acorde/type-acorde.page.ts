@@ -9,8 +9,16 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./type-acorde.page.scss'],
 })
 
+
 export class TypeAcordePage {
-  
+
+  notaSeleccionada: any;
+  acordeMayor: any;
+  acordeMenor: any;
+  acorde7: any;
+
+
+
   constructor(public navCtrl: NavController, public platform: Platform, private nativeAudio: NativeAudio, public activeRouter: ActivatedRoute) {
     this.nativeAudio.preloadSimple('A_1', 'assets/audio/A_1.mp3').then(
       (success) => {console.log('successA#1'); }, (error) => {console.log('errorA#1'); }
@@ -197,7 +205,6 @@ export class TypeAcordePage {
     );
   }
 
-  
 
   A() {
     this.nativeAudio.play('A1').then(
@@ -270,7 +277,7 @@ export class TypeAcordePage {
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
   }
-  
+
   Bm() {
     this.nativeAudio.play('B1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
@@ -593,10 +600,165 @@ export class TypeAcordePage {
   }
 
 
-  
+
+
+
 
   ngOnInit() {
-    let notaSeleccionada = this.activeRouter.snapshot.paramMap.get('notaRaiz');
-    console.log(notaSeleccionada);
+    this.notaSeleccionada = this.activeRouter.snapshot.paramMap.get('notaRaiz');
+    this.acordeMayor = this.activeRouter.snapshot.paramMap.get('acordeMayor');
+    this.acordeMenor = this.activeRouter.snapshot.paramMap.get('acordeMenor');
+    this.acorde7 = this.activeRouter.snapshot.paramMap.get('acorde7');
+    console.log(this.notaSeleccionada, this.acordeMayor, this.acordeMenor, this.acorde7);
+
+
+    if (this.notaSeleccionada == 'Do') {
+      document.getElementsByName("EMayor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("EMayor")[2].setAttribute("style", "color: red");
+      document.getElementsByName("EMayor")[3].setAttribute("style", "color: gainsboro");
+      document.getElementsByName("CMayor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("CMayor")[2].setAttribute("style", "color: red");
+      document.getElementsByName("GMayor")[1].setAttribute("style", "color: red");
+
+      document.getElementsByName("GMenor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("CMenor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("GMenor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("D#Menor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("CMenor")[2].setAttribute("style", "color: red");
+      document.getElementsByName("EMenor")[3].setAttribute("style", "color: gainsboro");
+
+      document.getElementsByName("E7")[0].setAttribute("style", "color: red");
+      document.getElementsByName("C7")[0].setAttribute("style", "color: red");
+      document.getElementsByName("A#7")[0].setAttribute("style", "color: red");
+      document.getElementsByName("E7")[2].setAttribute("style", "color: red");
+      document.getElementsByName("C7")[2].setAttribute("style", "color: red");
+      document.getElementsByName("E7")[3].setAttribute("style", "color: gainsboro");
+    } else if (this.notaSeleccionada == 'Re') {
+      document.getElementsByName("F#Mayor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("DMayor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("AMayor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("DMayor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("AMayor")[2].setAttribute("style", "color: gainsboro");
+      document.getElementsByName("EMayor")[3].setAttribute("style", "color: gainsboro");
+
+      document.getElementsByName("FMenor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("DMenor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("AMenor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("DMenor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("AMenor")[2].setAttribute("style", "color: gainsboro");
+      document.getElementsByName("EMenor")[3].setAttribute("style", "color: gainsboro");
+
+      document.getElementsByName("F#7")[0].setAttribute("style", "color: red");
+      document.getElementsByName("C7")[0].setAttribute("style", "color: red");
+      document.getElementsByName("A7")[1].setAttribute("style", "color: red");
+      document.getElementsByName("D7")[1].setAttribute("style", "color: red");
+      document.getElementsByName("A7")[2].setAttribute("style", "color: gainsboro");
+      document.getElementsByName("E7")[3].setAttribute("style", "color: gainsboro");
+    } else if (this.notaSeleccionada == 'Mi') {
+      document.getElementsByName("EMayor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("BMayor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("G#Mayor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("EMayor")[2].setAttribute("style", "color: red");
+      document.getElementsByName("BMayor")[2].setAttribute("style", "color: red");
+      document.getElementsByName("EMayor")[3].setAttribute("style", "color: red");
+
+      document.getElementsByName("EMenor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("BMenor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("GMenor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("EMenor")[2].setAttribute("style", "color: red");
+      document.getElementsByName("BMenor")[2].setAttribute("style", "color: red");
+      document.getElementsByName("EMenor")[3].setAttribute("style", "color: red");
+
+      document.getElementsByName("E7")[0].setAttribute("style", "color: red");
+      document.getElementsByName("B7")[0].setAttribute("style", "color: red");
+      document.getElementsByName("G#7")[1].setAttribute("style", "color: red");
+      document.getElementsByName("D7")[1].setAttribute("style", "color: red");
+      document.getElementsByName("B7")[2].setAttribute("style", "color: red");
+      document.getElementsByName("E7")[3].setAttribute("style", "color: red");
+    } else if (this.notaSeleccionada == 'Fa') {
+      document.getElementsByName("FMayor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("CMayor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("AMayor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("FMayor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("CMayor")[2].setAttribute("style", "color: red");
+      document.getElementsByName("FMayor")[2].setAttribute("style", "color: red");
+
+      document.getElementsByName("FMenor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("CMenor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("G#Menor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("FMenor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("CMenor")[2].setAttribute("style", "color: red");
+      document.getElementsByName("FMenor")[2].setAttribute("style", "color: red");
+
+      document.getElementsByName("F7")[0].setAttribute("style", "color: red");
+      document.getElementsByName("C7")[0].setAttribute("style", "color: red");
+      document.getElementsByName("A7")[1].setAttribute("style", "color: red");
+      document.getElementsByName("D#7")[1].setAttribute("style", "color: red");
+      document.getElementsByName("C7")[2].setAttribute("style", "color: red");
+      document.getElementsByName("F7")[2].setAttribute("style", "color: red");
+    } else if (this.notaSeleccionada == 'Sol') {
+      document.getElementsByName("GMayor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("BMayor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("GMayor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("DMayor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("BMayor")[2].setAttribute("style", "color: red");
+      document.getElementsByName("GMayor")[3].setAttribute("style", "color: red");
+
+      document.getElementsByName("GMenor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("DMenor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("GMenor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("DMenor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("A#Menor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("GMenor")[3].setAttribute("style", "color: red");
+
+      document.getElementsByName("F7")[0].setAttribute("style", "color: red");
+      document.getElementsByName("B7")[0].setAttribute("style", "color: red");
+      document.getElementsByName("G7")[1].setAttribute("style", "color: red");
+      document.getElementsByName("D7")[1].setAttribute("style", "color: red");
+      document.getElementsByName("B7")[2].setAttribute("style", "color: red");
+      document.getElementsByName("G7")[3].setAttribute("style", "color: red");
+    } else if (this.notaSeleccionada == 'La') {
+      document.getElementsByName("EMayor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("C#Mayor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("AMayor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("EMayor")[2].setAttribute("style", "color: red");
+      document.getElementsByName("AMayor")[2].setAttribute("style", "color: red");
+      document.getElementsByName("EMayor")[3].setAttribute("style", "color: gainsboro");
+
+      document.getElementsByName("EMenor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("CMenor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("AMenor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("EMenor")[2].setAttribute("style", "color: red");
+      document.getElementsByName("AMenor")[2].setAttribute("style", "color: red");
+      document.getElementsByName("EMenor")[3].setAttribute("style", "color: gainsboro");
+
+      document.getElementsByName("E7")[0].setAttribute("style", "color: red");
+      document.getElementsByName("C#7")[0].setAttribute("style", "color: red");
+      document.getElementsByName("G7")[1].setAttribute("style", "color: red");
+      document.getElementsByName("E7")[2].setAttribute("style", "color: red");
+      document.getElementsByName("A7")[2].setAttribute("style", "color: red");
+      document.getElementsByName("E7")[3].setAttribute("style", "color: gainsboro");
+    } else if (this.notaSeleccionada == 'Si') {
+      document.getElementsByName("F#Mayor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("D#Mayor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("BMayor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("F#Mayor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("BMayor")[2].setAttribute("style", "color: red");
+      document.getElementsByName("EMayor")[3].setAttribute("style", "color: gainsboro");
+
+      document.getElementsByName("F#Menor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("BMenor")[0].setAttribute("style", "color: red");
+      document.getElementsByName("BMenor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("DMenor")[1].setAttribute("style", "color: red");
+      document.getElementsByName("BMenor")[2].setAttribute("style", "color: red");
+      document.getElementsByName("EMenor")[3].setAttribute("style", "color: gainsboro");
+
+      document.getElementsByName("F#7")[0].setAttribute("style", "color: red");
+      document.getElementsByName("B7")[0].setAttribute("style", "color: red");
+      document.getElementsByName("A7")[1].setAttribute("style", "color: red");
+      document.getElementsByName("D#7")[1].setAttribute("style", "color: red");
+      document.getElementsByName("B7")[2].setAttribute("style", "color: red");
+      document.getElementsByName("E7")[3].setAttribute("style", "color: gainsboro");
+    }
   }
 }

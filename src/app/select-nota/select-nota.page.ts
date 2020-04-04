@@ -39,8 +39,21 @@ export class SelectNotaPage implements OnInit {
 
   clickNota(nombreNota) {
     console.log('Presionó: ' + nombreNota);
-    console.log(this.A);
-    // this.router.navigate(['type-acorde', nombreNota]);
+    if (nombreNota == 'Do') {
+      this.router.navigate(['type-acorde', nombreNota, 'C', 'Cm', 'C7']);
+    } else if (nombreNota == 'Re') {
+      this.router.navigate(['type-acorde', nombreNota, 'D', 'Dm', 'D7']);
+    } else if (nombreNota == 'Mi') {
+      this.router.navigate(['type-acorde', nombreNota, 'E', 'Em', 'E7']);
+    } else if (nombreNota == 'Fa') {
+      this.router.navigate(['type-acorde', nombreNota, 'F', 'Fm', 'F7']);
+    } else if (nombreNota == 'Sol') {
+      this.router.navigate(['type-acorde', nombreNota, 'G', 'Gm', 'G7']);
+    } else if (nombreNota == 'La') {
+      this.router.navigate(['type-acorde', nombreNota, 'A', 'Am', 'A7']);
+    } else if (nombreNota == 'Si') {
+      this.router.navigate(['type-acorde', nombreNota, 'B', 'Bm', 'B7']);
+    }
   }
 
   ngOnInit() {
