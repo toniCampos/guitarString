@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class SelectNotaPage implements OnInit {
 
   clickNota(nombreNota) {
-    console.log("Presionó: " + nombreNota)
+    console.log('Presionó: ' + nombreNota)
     this.router.navigate(['type-acorde', nombreNota])
   }
 
@@ -21,13 +21,15 @@ export class SelectNotaPage implements OnInit {
   acordes: any;
 
   ngOnInit() {
+
+    let A;
     this.httpSrv.getChords()
     .subscribe(res => {
       this.acordes = res;
       console.log(this.acordes);
 
 
-      const A = this.acordes.A;
+      A = this.acordes.A;
       const Am = this.acordes.Am;
       const A7 = this.acordes.A7;
 
@@ -54,6 +56,9 @@ export class SelectNotaPage implements OnInit {
       const G = this.acordes.G;
       const Gm = this.acordes.Gm;
       const G7 = this.acordes.G7;
+
     });
+
+    console.log('Imprimir ' + A);
   }
 }
