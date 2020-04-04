@@ -11,54 +11,74 @@ import { Router } from '@angular/router';
 
 export class SelectNotaPage implements OnInit {
 
-  clickNota(nombreNota) {
-    console.log('Presionó: ' + nombreNota)
-    this.router.navigate(['type-acorde', nombreNota])
-  }
+  acordes: any;
+
+  A: any;
+  Am: any;
+  A7: any;
+  B: any;
+  Bm: any;
+  B7: any;
+  C: any;
+  Cm: any;
+  C7: any;
+  D: any;
+  Dm: any;
+  D7: any;
+  E: any;
+  Em: any;
+  E7: any;
+  F: any;
+  Fm: any;
+  F7: any;
+  G: any;
+  Gm: any;
+  G7: any;
 
   constructor(private httpSrv: HttpService, public router: Router) { }
 
-  acordes: any;
+  clickNota(nombreNota) {
+    console.log('Presionó: ' + nombreNota);
+    console.log(this.A);
+    // this.router.navigate(['type-acorde', nombreNota]);
+  }
 
   ngOnInit() {
 
-    let A;
     this.httpSrv.getChords()
     .subscribe(res => {
       this.acordes = res;
       console.log(this.acordes);
 
 
-      A = this.acordes.A;
-      const Am = this.acordes.Am;
-      const A7 = this.acordes.A7;
+      this.A = this.acordes.A;
+      this.Am = this.acordes.Am;
+      this.A7 = this.acordes.A7;
 
-      const B = this.acordes.B;
-      const Bm = this.acordes.Bm;
-      const B7 = this.acordes.B7;
+      this.B = this.acordes.B;
+      this.Bm = this.acordes.Bm;
+      this.B7 = this.acordes.B7;
 
-      const C = this.acordes.C;
-      const Cm = this.acordes.Cm;
-      const C7 = this.acordes.C7;
+      this.C = this.acordes.C;
+      this.Cm = this.acordes.Cm;
+      this.C7 = this.acordes.C7;
 
-      const D = this.acordes.D;
-      const Dm = this.acordes.Dm;
-      const D7 = this.acordes.D7;
+      this.D = this.acordes.D;
+      this.Dm = this.acordes.Dm;
+      this.D7 = this.acordes.D7;
 
-      const E = this.acordes.E;
-      const Em = this.acordes.Em;
-      const E7 = this.acordes.E7;
+      this.E = this.acordes.E;
+      this.Em = this.acordes.Em;
+      this.E7 = this.acordes.E7;
 
-      const F = this.acordes.F;
-      const Fm = this.acordes.Fm;
-      const F7 = this.acordes.F7;
+      this.F = this.acordes.F;
+      this.Fm = this.acordes.Fm;
+      this.F7 = this.acordes.F7;
 
-      const G = this.acordes.G;
-      const Gm = this.acordes.Gm;
-      const G7 = this.acordes.G7;
+      this.G = this.acordes.G;
+      this.Gm = this.acordes.Gm;
+      this.G7 = this.acordes.G7;
 
     });
-
-    console.log('Imprimir ' + A);
   }
 }
