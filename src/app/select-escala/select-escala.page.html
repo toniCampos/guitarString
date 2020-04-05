@@ -21,45 +21,141 @@
 </ion-header>
 
 <ion-content padding [fullscreen]="true">
-  <div id="container">
-    <strong>Selecciona el tipo de escala</strong>
-    <section>
-        <ion-button expand="block" (click)="Fretboard()">Mayor</ion-button>
-    </section>
-    <section>
-        <ion-button expand="block" (click)="play()">Menor</ion-button>
-    </section>
-    <section>
-      <ion-button expand="block">Armónica menor</ion-button>
-    </section>
-    <section>
-      <ion-button expand="block">Pentatónica menor</ion-button>
-    </section>
-    <section>
-      <ion-button expand="block">Cromática</ion-button>
-    </section>
-
-    <mat-expansion-panel class="matExpansion">
-      <mat-expansion-panel-header>
-        This is the expansion title
-      </mat-expansion-panel-header>
-    
+  <mat-expansion-panel class="matExpansion">
+    <mat-expansion-panel-header>
+      Do
+    </mat-expansion-panel-header>
     <div class="fretboardContainer">
-
       <pre>
 <p>
-  —E—||——<button class="rootNoteButton">F </button>——|——F#——|——G ——|——G#——|——A ——|——A#——|——B ——|——C ——|——C#——|——D ——|——D#——|——E ——| &nbsp;
-  —B—||——<button class="noteButton">A</button>——|——C#——|——D ——|——D#——|——E ——|——F ——|——F#——|——G ——|——G#——|——A ——|——A#——|——B ——| &nbsp;
-  —G—||——<button class="noteButton">G#</button>——|——A ——|——A#——|——B ——|——C ——|——C#——|——D ——|——D#——|——E ——|——F ——|——F#——|——G ——| &nbsp;
-  —D—||——<button class="noteButton">D#</button>——|——E ——|——F ——|——F#——|——G ——|——G#——|——A ——|——A#——|——B ——|——C ——|——C#——|——D ——| &nbsp;
-  —A—||——<button class="noteButton">A#</button>——|——B ——|——C ——|——C#——|——D ——|——D#——|——E ——|——F ——|——F#——|——G ——|——G#——|——A ——| &nbsp;
-  —E—||——<button class="noteButton">F</button>——|——F#——|——G ——|——G#——|——A ——|——A#——|——B ——|——C ——|——C#——|——D ——|——D#——|——E ——| &nbsp;
+—<span name="E-DO">E</span>—||——<span name="F-DO">F </span>——|——<span name="F#-DO">F#</span>——|——<span name="G-DO">G </span>——|——<span name="G#-DO">G#</span>——|——<span name="A-DO">A </span>——| &nbsp;
+—<span name="B-DO">B</span>—||——<span name="C-DO">C </span>——|——<span name="C#-DO">C#</span>——|——<span name="D-DO">D </span>——|——<span name="D#-DO">D#</span>——|——<span name="E-DO">E </span>——| &nbsp;
+—<span name="G-DO">G</span>—||——<span name="G#-DO">G#</span>——|——<span name="A-DO">A </span>——|——<span name="A#-DO">A#</span>——|——<span name="B-DO">B </span>——|——<span name="C-DO">C </span>——| &nbsp;
+—<span name="D-DO">D</span>—||——<span name="D#-DO">D#</span>——|——<span name="E-DO">E </span>——|——<span name="F-DO">F </span>——|——<span name="F#-DO">F#</span>——|——<span name="G-DO">G </span>——| &nbsp;
+—<span name="A-DO">A</span>—||——<span name="A#-DO">A#</span>——|——<span name="B-DO">B </span>——|——<span name="C-DO">C </span>——|——<span name="C#-DO">C#</span>——|——<span name="D-DO">D </span>——| &nbsp;
+—<span name="E-DO">E</span>—||——<span name="F-DO">F </span>——|——<span name="F#-DO">F#</span>——|——<span name="G-DO">G </span>——|——<span name="G#-DO">G#</span>——|——<span name="A-DO">A </span>——| &nbsp;
 </p>
       </pre>
-
     </div>
-    
-    
-    </mat-expansion-panel>
-  </div>
+  </mat-expansion-panel>
+
+  <hr>
+
+  <mat-expansion-panel class="matExpansion">
+    <mat-expansion-panel-header>
+      Re
+    </mat-expansion-panel-header>
+    <div class="fretboardContainer">
+      <pre>
+<p>
+—<span name="E-RE">E</span>—||——<span name="F-RE">F </span>——|——<span name="F#-RE">F#</span>——|——<span name="G-RE">G </span>——|——<span name="G#-RE">G#</span>——|——<span name="A-RE">A </span>——| &nbsp;
+—<span name="B-RE">B</span>—||——<span name="C-RE">C </span>——|——<span name="C#-RE">C#</span>——|——<span name="D-RE">D </span>——|——<span name="D#-RE">D#</span>——|——<span name="E-RE">E </span>——| &nbsp;
+—<span name="G-RE">G</span>—||——<span name="G#-RE">G#</span>——|——<span name="A-RE">A </span>——|——<span name="A#-RE">A#</span>——|——<span name="B-RE">B </span>——|——<span name="C-RE">C </span>——| &nbsp;
+—<span name="D-RE">D</span>—||——<span name="D#-RE">D#</span>——|——<span name="E-RE">E </span>——|——<span name="F-RE">F </span>——|——<span name="F#-RE">F#</span>——|——<span name="G-RE">G </span>——| &nbsp;
+—<span name="A-RE">A</span>—||——<span name="A#-RE">A#</span>——|——<span name="B-RE">B </span>——|——<span name="C-RE">C </span>——|——<span name="C#-RE">C#</span>——|——<span name="D-RE">D </span>——| &nbsp;
+—<span name="E-RE">E</span>—||——<span name="F-RE">F </span>——|——<span name="F#-RE">F#</span>——|——<span name="G-RE">G </span>——|——<span name="G#-RE">G#</span>——|——<span name="A-RE">A </span>——| &nbsp;
+</p>
+      </pre>
+    </div>
+  </mat-expansion-panel>
+
+  <hr>
+
+  <mat-expansion-panel class="matExpansion">
+    <mat-expansion-panel-header>
+      Mi
+    </mat-expansion-panel-header>
+    <div class="fretboardContainer">
+      <pre>
+<p>
+—<span name="E-MI">E</span>—||——<span name="F-MI">F </span>——|——<span name="F#-MI">F#</span>——|——<span name="G-MI">G </span>——|——<span name="G#-MI">G#</span>——|——<span name="A-MI">A </span>——| &nbsp;
+—<span name="B-MI">B</span>—||——<span name="C-MI">C </span>——|——<span name="C#-MI">C#</span>——|——<span name="D-MI">D </span>——|——<span name="D#-MI">D#</span>——|——<span name="E-MI">E </span>——| &nbsp;
+—<span name="G-MI">G</span>—||——<span name="G#-MI">G#</span>——|——<span name="A-MI">A </span>——|——<span name="A#-MI">A#</span>——|——<span name="B-MI">B </span>——|——<span name="C-MI">C </span>——| &nbsp;
+—<span name="D-MI">D</span>—||——<span name="D#-MI">D#</span>——|——<span name="E-MI">E </span>——|——<span name="F-MI">F </span>——|——<span name="F#-MI">F#</span>——|——<span name="G-MI">G </span>——| &nbsp;
+—<span name="A-MI">A</span>—||——<span name="A#-MI">A#</span>——|——<span name="B-MI">B </span>——|——<span name="C-MI">C </span>——|——<span name="C#-MI">C#</span>——|——<span name="D-MI">D </span>——| &nbsp;
+—<span name="E-MI">E</span>—||——<span name="F-MI">F </span>——|——<span name="F#-MI">F#</span>——|——<span name="G-MI">G </span>——|——<span name="G#-MI">G#</span>——|——<span name="A-MI">A </span>——| &nbsp;
+</p>
+      </pre>
+    </div>
+  </mat-expansion-panel>
+
+  <hr>
+
+  <mat-expansion-panel class="matExpansion">
+    <mat-expansion-panel-header>
+      Fa
+    </mat-expansion-panel-header>
+    <div class="fretboardContainer">
+      <pre>
+<p>
+—<span name="E-FA">E</span>—||——<span name="F-FA">F </span>——|——<span name="F#-FA">F#</span>——|——<span name="G-FA">G </span>——|——<span name="G#-FA">G#</span>——|——<span name="A-FA">A </span>——| &nbsp;
+—<span name="B-FA">B</span>—||——<span name="C-FA">C </span>——|——<span name="C#-FA">C#</span>——|——<span name="D-FA">D </span>——|——<span name="D#-FA">D#</span>——|——<span name="E-FA">E </span>——| &nbsp;
+—<span name="G-FA">G</span>—||——<span name="G#-FA">G#</span>——|——<span name="A-FA">A </span>——|——<span name="A#-FA">A#</span>——|——<span name="B-FA">B </span>——|——<span name="C-FA">C </span>——| &nbsp;
+—<span name="D-FA">D</span>—||——<span name="D#-FA">D#</span>——|——<span name="E-FA">E </span>——|——<span name="F-FA">F </span>——|——<span name="F#-FA">F#</span>——|——<span name="G-FA">G </span>——| &nbsp;
+—<span name="A-FA">A</span>—||——<span name="A#-FA">A#</span>——|——<span name="B-FA">B </span>——|——<span name="C-FA">C </span>——|——<span name="C#-FA">C#</span>——|——<span name="D-FA">D </span>——| &nbsp;
+—<span name="E-FA">E</span>—||——<span name="F-FA">F </span>——|——<span name="F#-FA">F#</span>——|——<span name="G-FA">G </span>——|——<span name="G#-FA">G#</span>——|——<span name="A-FA">A </span>——| &nbsp;
+</p>
+      </pre>
+    </div>
+  </mat-expansion-panel>
+
+  <hr>
+
+  <mat-expansion-panel class="matExpansion">
+    <mat-expansion-panel-header>
+      Sol
+    </mat-expansion-panel-header>
+    <div class="fretboardContainer">
+      <pre>
+<p>
+—<span name="E-SOL">E</span>—||——<span name="F-SOL">F </span>——|——<span name="F#-SOL">F#</span>——|——<span name="G-SOL">G </span>——|——<span name="G#-SOL">G#</span>——|——<span name="A-SOL">A </span>——| &nbsp;
+—<span name="B-SOL">B</span>—||——<span name="C-SOL">C </span>——|——<span name="C#-SOL">C#</span>——|——<span name="D-SOL">D </span>——|——<span name="D#-SOL">D#</span>——|——<span name="E-SOL">E </span>——| &nbsp;
+—<span name="G-SOL">G</span>—||——<span name="G#-SOL">G#</span>——|——<span name="A-SOL">A </span>——|——<span name="A#-SOL">A#</span>——|——<span name="B-SOL">B </span>——|——<span name="C-SOL">C </span>——| &nbsp;
+—<span name="D-SOL">D</span>—||——<span name="D#-SOL">D#</span>——|——<span name="E-SOL">E </span>——|——<span name="F-SOL">F </span>——|——<span name="F#-SOL">F#</span>——|——<span name="G-SOL">G </span>——| &nbsp;
+—<span name="A-SOL">A</span>—||——<span name="A#-SOL">A#</span>——|——<span name="B-SOL">B </span>——|——<span name="C-SOL">C </span>——|——<span name="C#-SOL">C#</span>——|——<span name="D-SOL">D </span>——| &nbsp;
+—<span name="E-SOL">E</span>—||——<span name="F-SOL">F </span>——|——<span name="F#-SOL">F#</span>——|——<span name="G-SOL">G </span>——|——<span name="G#-SOL">G#</span>——|——<span name="A-SOL">A </span>——| &nbsp;
+</p>
+      </pre>
+    </div>
+  </mat-expansion-panel>
+
+  <hr>
+
+  <mat-expansion-panel class="matExpansion">
+    <mat-expansion-panel-header>
+      La
+    </mat-expansion-panel-header>
+    <div class="fretboardContainer">
+      <pre>
+<p>
+—<span name="E-LA">E</span>—||——<span name="F-LA">F </span>——|——<span name="F#-LA">F#</span>——|——<span name="G-LA">G </span>——|——<span name="G#-LA">G#</span>——|——<span name="A-LA">A </span>——| &nbsp;
+—<span name="B-LA">B</span>—||——<span name="C-LA">C </span>——|——<span name="C#-LA">C#</span>——|——<span name="D-LA">D </span>——|——<span name="D#-LA">D#</span>——|——<span name="E-LA">E </span>——| &nbsp;
+—<span name="G-LA">G</span>—||——<span name="G#-LA">G#</span>——|——<span name="A-LA">A </span>——|——<span name="A#-LA">A#</span>——|——<span name="B-LA">B </span>——|——<span name="C-LA">C </span>——| &nbsp;
+—<span name="D-LA">D</span>—||——<span name="D#-LA">D#</span>——|——<span name="E-LA">E </span>——|——<span name="F-LA">F </span>——|——<span name="F#-LA">F#</span>——|——<span name="G-LA">G </span>——| &nbsp;
+—<span name="A-LA">A</span>—||——<span name="A#-LA">A#</span>——|——<span name="B-LA">B </span>——|——<span name="C-LA">C </span>——|——<span name="C#-LA">C#</span>——|——<span name="D-LA">D </span>——| &nbsp;
+—<span name="E-LA">E</span>—||——<span name="F-LA">F </span>——|——<span name="F#-LA">F#</span>——|——<span name="G-LA">G </span>——|——<span name="G#-LA">G#</span>——|——<span name="A-LA">A </span>——| &nbsp;
+</p>
+      </pre>
+    </div>
+  </mat-expansion-panel>
+
+  <hr>
+
+  <mat-expansion-panel class="matExpansion">
+    <mat-expansion-panel-header>
+      Si
+    </mat-expansion-panel-header>
+    <div class="fretboardContainer">
+      <pre>
+<p>
+—<span name="E-SI">E</span>—||——<span name="F-SI">F </span>——|——<span name="F#-SI">F#</span>——|——<span name="G-SI">G </span>——|——<span name="G#-SI">G#</span>——|——<span name="A-SI">A </span>——| &nbsp;
+—<span name="B-SI">B</span>—||——<span name="C-SI">C </span>——|——<span name="C#-SI">C#</span>——|——<span name="D-SI">D </span>——|——<span name="D#-SI">D#</span>——|——<span name="E-SI">E </span>——| &nbsp;
+—<span name="G-SI">G</span>—||——<span name="G#-SI">G#</span>——|——<span name="A-SI">A </span>——|——<span name="A#-SI">A#</span>——|——<span name="B-SI">B </span>——|——<span name="C-SI">C </span>——| &nbsp;
+—<span name="D-SI">D</span>—||——<span name="D#-SI">D#</span>——|——<span name="E-SI">E </span>——|——<span name="F-SI">F </span>——|——<span name="F#-SI">F#</span>——|——<span name="G-SI">G </span>——| &nbsp;
+—<span name="A-SI">A</span>—||——<span name="A#-SI">A#</span>——|——<span name="B-SI">B </span>——|——<span name="C-SI">C </span>——|——<span name="C#-SI">C#</span>——|——<span name="D-SI">D </span>——| &nbsp;
+—<span name="E-SI">E</span>—||——<span name="F-SI">F </span>——|——<span name="F#-SI">F#</span>——|——<span name="G-SI">G </span>——|——<span name="G#-SI">G#</span>——|——<span name="A-SI">A </span>——| &nbsp;
+</p>
+      </pre>
+    </div>
+  </mat-expansion-panel>
 </ion-content>
