@@ -3,6 +3,7 @@ import { NavController, Platform } from '@ionic/angular';
 import { NativeAudio } from '@ionic-native/native-audio/ngx';
 import { ActivatedRoute } from '@angular/router';
 
+
 @Component({
   selector: 'app-type-acorde',
   templateUrl: './type-acorde.page.html',
@@ -490,6 +491,7 @@ export class TypeAcordePage {
 
 
     if (this.notaSeleccionada == 'Do') {
+      document.getElementById("Acordemayor").addEventListener('click', (e:Event) => this.C());
       document.getElementsByName("EMayor")[0].setAttribute("style", "color: red");
       document.getElementsByName("EMayor")[2].setAttribute("style", "color: red");
       document.getElementsByName("EMayor")[3].setAttribute("style", "color: gainsboro");
@@ -497,6 +499,7 @@ export class TypeAcordePage {
       document.getElementsByName("CMayor")[2].setAttribute("style", "color: red");
       document.getElementsByName("GMayor")[1].setAttribute("style", "color: red");
 
+      document.getElementById("Acordemenor").addEventListener('click', (e:Event) => this.Cm());
       document.getElementsByName("GMenor")[0].setAttribute("style", "color: red");
       document.getElementsByName("CMenor")[0].setAttribute("style", "color: red");
       document.getElementsByName("GMenor")[1].setAttribute("style", "color: red");
@@ -504,6 +507,7 @@ export class TypeAcordePage {
       document.getElementsByName("CMenor")[2].setAttribute("style", "color: red");
       document.getElementsByName("EMenor")[3].setAttribute("style", "color: gainsboro");
 
+      document.getElementById("Acorde7").addEventListener('click', (e:Event) => this.C7());
       document.getElementsByName("E7")[0].setAttribute("style", "color: red");
       document.getElementsByName("C7")[0].setAttribute("style", "color: red");
       document.getElementsByName("A#7")[0].setAttribute("style", "color: red");
@@ -511,6 +515,7 @@ export class TypeAcordePage {
       document.getElementsByName("C7")[2].setAttribute("style", "color: red");
       document.getElementsByName("E7")[3].setAttribute("style", "color: gainsboro");
     } else if (this.notaSeleccionada == 'Re') {
+      document.getElementById("Acordemayor").addEventListener('click', (e:Event) => this.D());
       document.getElementsByName("F#Mayor")[0].setAttribute("style", "color: red");
       document.getElementsByName("DMayor")[0].setAttribute("style", "color: red");
       document.getElementsByName("AMayor")[1].setAttribute("style", "color: red");
@@ -518,6 +523,7 @@ export class TypeAcordePage {
       document.getElementsByName("AMayor")[2].setAttribute("style", "color: gainsboro");
       document.getElementsByName("EMayor")[3].setAttribute("style", "color: gainsboro");
 
+      document.getElementById("Acordemenor").addEventListener('click', (e:Event) => this.Dm());
       document.getElementsByName("FMenor")[0].setAttribute("style", "color: red");
       document.getElementsByName("DMenor")[0].setAttribute("style", "color: red");
       document.getElementsByName("AMenor")[1].setAttribute("style", "color: red");
@@ -525,6 +531,7 @@ export class TypeAcordePage {
       document.getElementsByName("AMenor")[2].setAttribute("style", "color: gainsboro");
       document.getElementsByName("EMenor")[3].setAttribute("style", "color: gainsboro");
 
+      document.getElementById("Acorde7").addEventListener('click', (e:Event) => this.D7());
       document.getElementsByName("F#7")[0].setAttribute("style", "color: red");
       document.getElementsByName("C7")[0].setAttribute("style", "color: red");
       document.getElementsByName("A7")[1].setAttribute("style", "color: red");
@@ -532,6 +539,7 @@ export class TypeAcordePage {
       document.getElementsByName("A7")[2].setAttribute("style", "color: gainsboro");
       document.getElementsByName("E7")[3].setAttribute("style", "color: gainsboro");
     } else if (this.notaSeleccionada == 'Mi') {
+      document.getElementById("Acordemayor").addEventListener('click', (e:Event) => this.E());
       document.getElementsByName("EMayor")[0].setAttribute("style", "color: red");
       document.getElementsByName("BMayor")[0].setAttribute("style", "color: red");
       document.getElementsByName("G#Mayor")[1].setAttribute("style", "color: red");
@@ -539,6 +547,7 @@ export class TypeAcordePage {
       document.getElementsByName("BMayor")[2].setAttribute("style", "color: red");
       document.getElementsByName("EMayor")[3].setAttribute("style", "color: red");
 
+      document.getElementById("Acordemenor").addEventListener('click', (e:Event) => this.Em());
       document.getElementsByName("EMenor")[0].setAttribute("style", "color: red");
       document.getElementsByName("BMenor")[0].setAttribute("style", "color: red");
       document.getElementsByName("GMenor")[1].setAttribute("style", "color: red");
@@ -546,6 +555,7 @@ export class TypeAcordePage {
       document.getElementsByName("BMenor")[2].setAttribute("style", "color: red");
       document.getElementsByName("EMenor")[3].setAttribute("style", "color: red");
 
+      document.getElementById("Acorde7").addEventListener('click', (e:Event) => this.E7());
       document.getElementsByName("E7")[0].setAttribute("style", "color: red");
       document.getElementsByName("B7")[0].setAttribute("style", "color: red");
       document.getElementsByName("G#7")[1].setAttribute("style", "color: red");
@@ -553,6 +563,7 @@ export class TypeAcordePage {
       document.getElementsByName("B7")[2].setAttribute("style", "color: red");
       document.getElementsByName("E7")[3].setAttribute("style", "color: red");
     } else if (this.notaSeleccionada == 'Fa') {
+      document.getElementById("Acordemayor").addEventListener('click', (e:Event) => this.F());
       document.getElementsByName("FMayor")[0].setAttribute("style", "color: red");
       document.getElementsByName("CMayor")[0].setAttribute("style", "color: red");
       document.getElementsByName("AMayor")[1].setAttribute("style", "color: red");
@@ -560,6 +571,7 @@ export class TypeAcordePage {
       document.getElementsByName("CMayor")[2].setAttribute("style", "color: red");
       document.getElementsByName("FMayor")[2].setAttribute("style", "color: red");
 
+      document.getElementById("Acordemenor").addEventListener('click', (e:Event) => this.Fm());
       document.getElementsByName("FMenor")[0].setAttribute("style", "color: red");
       document.getElementsByName("CMenor")[0].setAttribute("style", "color: red");
       document.getElementsByName("G#Menor")[1].setAttribute("style", "color: red");
@@ -567,6 +579,7 @@ export class TypeAcordePage {
       document.getElementsByName("CMenor")[2].setAttribute("style", "color: red");
       document.getElementsByName("FMenor")[2].setAttribute("style", "color: red");
 
+      document.getElementById("Acorde7").addEventListener('click', (e:Event) => this.F7());
       document.getElementsByName("F7")[0].setAttribute("style", "color: red");
       document.getElementsByName("C7")[0].setAttribute("style", "color: red");
       document.getElementsByName("A7")[1].setAttribute("style", "color: red");
@@ -574,6 +587,7 @@ export class TypeAcordePage {
       document.getElementsByName("C7")[2].setAttribute("style", "color: red");
       document.getElementsByName("F7")[2].setAttribute("style", "color: red");
     } else if (this.notaSeleccionada == 'Sol') {
+      document.getElementById("Acordemayor").addEventListener('click', (e:Event) => this.G());
       document.getElementsByName("GMayor")[0].setAttribute("style", "color: red");
       document.getElementsByName("BMayor")[0].setAttribute("style", "color: red");
       document.getElementsByName("GMayor")[1].setAttribute("style", "color: red");
@@ -581,6 +595,7 @@ export class TypeAcordePage {
       document.getElementsByName("BMayor")[2].setAttribute("style", "color: red");
       document.getElementsByName("GMayor")[3].setAttribute("style", "color: red");
 
+      document.getElementById("Acordemenor").addEventListener('click', (e:Event) => this.Gm());
       document.getElementsByName("GMenor")[0].setAttribute("style", "color: red");
       document.getElementsByName("DMenor")[0].setAttribute("style", "color: red");
       document.getElementsByName("GMenor")[1].setAttribute("style", "color: red");
@@ -588,6 +603,7 @@ export class TypeAcordePage {
       document.getElementsByName("A#Menor")[1].setAttribute("style", "color: red");
       document.getElementsByName("GMenor")[3].setAttribute("style", "color: red");
 
+      document.getElementById("Acorde7").addEventListener('click', (e:Event) => this.G7());
       document.getElementsByName("F7")[0].setAttribute("style", "color: red");
       document.getElementsByName("B7")[0].setAttribute("style", "color: red");
       document.getElementsByName("G7")[1].setAttribute("style", "color: red");
@@ -595,6 +611,7 @@ export class TypeAcordePage {
       document.getElementsByName("B7")[2].setAttribute("style", "color: red");
       document.getElementsByName("G7")[3].setAttribute("style", "color: red");
     } else if (this.notaSeleccionada == 'La') {
+      document.getElementById("Acordemayor").addEventListener('click', (e:Event) => this.A());
       document.getElementsByName("EMayor")[0].setAttribute("style", "color: red");
       document.getElementsByName("C#Mayor")[0].setAttribute("style", "color: red");
       document.getElementsByName("AMayor")[1].setAttribute("style", "color: red");
@@ -602,6 +619,7 @@ export class TypeAcordePage {
       document.getElementsByName("AMayor")[2].setAttribute("style", "color: red");
       document.getElementsByName("EMayor")[3].setAttribute("style", "color: gainsboro");
 
+      document.getElementById("Acordemenor").addEventListener('click', (e:Event) => this.Am());
       document.getElementsByName("EMenor")[0].setAttribute("style", "color: red");
       document.getElementsByName("CMenor")[0].setAttribute("style", "color: red");
       document.getElementsByName("AMenor")[1].setAttribute("style", "color: red");
@@ -609,6 +627,7 @@ export class TypeAcordePage {
       document.getElementsByName("AMenor")[2].setAttribute("style", "color: red");
       document.getElementsByName("EMenor")[3].setAttribute("style", "color: gainsboro");
 
+      document.getElementById("Acorde7").addEventListener('click', (e:Event) => this.A7());
       document.getElementsByName("E7")[0].setAttribute("style", "color: red");
       document.getElementsByName("C#7")[0].setAttribute("style", "color: red");
       document.getElementsByName("G7")[1].setAttribute("style", "color: red");
@@ -616,6 +635,7 @@ export class TypeAcordePage {
       document.getElementsByName("A7")[2].setAttribute("style", "color: red");
       document.getElementsByName("E7")[3].setAttribute("style", "color: gainsboro");
     } else if (this.notaSeleccionada == 'Si') {
+      document.getElementById("Acordemayor").addEventListener('click', (e:Event) => this.B());
       document.getElementsByName("F#Mayor")[0].setAttribute("style", "color: red");
       document.getElementsByName("D#Mayor")[0].setAttribute("style", "color: red");
       document.getElementsByName("BMayor")[1].setAttribute("style", "color: red");
@@ -623,6 +643,7 @@ export class TypeAcordePage {
       document.getElementsByName("BMayor")[2].setAttribute("style", "color: red");
       document.getElementsByName("EMayor")[3].setAttribute("style", "color: gainsboro");
 
+      document.getElementById("Acordemenor").addEventListener('click', (e:Event) => this.Bm());
       document.getElementsByName("F#Menor")[0].setAttribute("style", "color: red");
       document.getElementsByName("BMenor")[0].setAttribute("style", "color: red");
       document.getElementsByName("BMenor")[1].setAttribute("style", "color: red");
@@ -630,6 +651,7 @@ export class TypeAcordePage {
       document.getElementsByName("BMenor")[2].setAttribute("style", "color: red");
       document.getElementsByName("EMenor")[3].setAttribute("style", "color: gainsboro");
 
+      document.getElementById("Acorde7").addEventListener('click', (e:Event) => this.B7());
       document.getElementsByName("F#7")[0].setAttribute("style", "color: red");
       document.getElementsByName("B7")[0].setAttribute("style", "color: red");
       document.getElementsByName("A7")[1].setAttribute("style", "color: red");
