@@ -7,14 +7,21 @@ export class HttpService {
   localPathAcordes = 'http://localhost:3000/chords';
   localPathEscalas = 'http://localhost:3000/scales';
 
+  serverAcordes = 'https://guitar-strings-server.herokuapp.com/chords';
+  serverEscalas = 'https://guitar-strings-server.herokuapp.com/scales';
+
   getChords() {
-      console.log('desde el servicio');
-      return this.http.get(this.localPathAcordes);
+      console.log('desde el servidor');
+      return this.http.get(this.serverAcordes);
+      // console.log('local');
+      // return this.http.get(this.localPathAcordes);
   }
 
   getScales() {
-    console.log('desde el servicio');
-    return this.http.get(this.localPathEscalas);
+    console.log('desde el servidor');
+    return this.http.get(this.serverEscalas);
+    // console.log('local');
+    // return this.http.get(this.localPathEscalas);
   }
 
 }
