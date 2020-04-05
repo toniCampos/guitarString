@@ -206,237 +206,234 @@ export class SelectEscalaPage implements OnInit{
     }
   }
   EscalaA(){
-    this.nativeAudio.play('A').then(
+    this.nativeAudio.play('A1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('B').then(
+    this.nativeAudio.play('B1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('C_').then(
+    this.nativeAudio.play('C_1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('D').then(
+    this.nativeAudio.play('D1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('E').then(
+    this.nativeAudio.play('E2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('F_').then(
+    this.nativeAudio.play('F_2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('G_').then(
+    this.nativeAudio.play('G_2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('A').then(
+    this.nativeAudio.play('A2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
   } 
   EscalaB(){
-    this.nativeAudio.play('B').then(
+    this.nativeAudio.play('B1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('C_').then(
+    this.nativeAudio.play('C_1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('D_').then(
+    this.nativeAudio.play('D_1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('E').then(
+    this.nativeAudio.play('E2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('F_').then(
+    this.nativeAudio.play('F_2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('G_').then(
+    this.nativeAudio.play('G_2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('A_').then(
+    this.nativeAudio.play('A_2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('B').then(
+    this.nativeAudio.play('B2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
   } 
   EscalaC(){
-    this.nativeAudio.play('C').then(
+    this.nativeAudio.play('C1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('D').then(
+    this.nativeAudio.play('D1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('E').then(
+    this.nativeAudio.play('E2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('F').then(
+    this.nativeAudio.play('F2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('G').then(
+    this.nativeAudio.play('G2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('A').then(
+    this.nativeAudio.play('A2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('B').then(
+    this.nativeAudio.play('B2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('C').then(
+    this.nativeAudio.play('C2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
   } 
   EscalaD(){
-    this.nativeAudio.play('D').then(
+    this.nativeAudio.play('D1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('E').then(
+    this.nativeAudio.play('E2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('F_').then(
+    this.nativeAudio.play('F_2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('G').then(
+    this.nativeAudio.play('G2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('A').then(
+    this.nativeAudio.play('A2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('B').then(
+    this.nativeAudio.play('B2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('C_').then(
+    this.nativeAudio.play('C_2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('D').then(
+    this.nativeAudio.play('D2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
   }
   EscalaE(){
-    this.nativeAudio.play('E').then(
+    this.nativeAudio.play('E1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('F_').then(
+    this.nativeAudio.play('F_1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('G_').then(
+    this.nativeAudio.play('G_1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('A').then(
+    this.nativeAudio.play('A1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('B').then(
+    this.nativeAudio.play('B1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('C_').then(
+    this.nativeAudio.play('C_1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('D_').then(
+    this.nativeAudio.play('D_1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('E').then(
+    this.nativeAudio.play('E2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
   } 
   EscalaF(){
-    this.nativeAudio.play('F').then(
+    this.nativeAudio.play('F1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('G').then(
+    this.nativeAudio.play('G1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('A').then(
+    this.nativeAudio.play('A1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('A_').then(
+    this.nativeAudio.play('A_1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('C').then(
+    this.nativeAudio.play('C1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('D').then(
+    this.nativeAudio.play('D1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('E').then(
+    this.nativeAudio.play('E2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('F').then(
+    this.nativeAudio.play('F2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('F').then(
-      (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
-    );
   } 
   EscalaG(){
-    this.nativeAudio.play('G').then(
+    this.nativeAudio.play('G1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('A').then(
+    this.nativeAudio.play('A1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('B').then(
+    this.nativeAudio.play('B1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('C').then(
+    this.nativeAudio.play('C1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('D').then(
+    this.nativeAudio.play('D1').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('E').then(
+    this.nativeAudio.play('E2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('F_').then(
+    this.nativeAudio.play('F_2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
     this.sleep(500);
-    this.nativeAudio.play('G').then(
+    this.nativeAudio.play('G2').then(
       (success) => { console.log('success playing'); }, (error) => { console.log('error'); }
     );
   } 
